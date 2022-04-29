@@ -87,11 +87,9 @@ namespace MaskedTextBox_Radiobutton_ListBoxApp
 
         private void Delete_button_Click(object sender, EventArgs e)
         {
-            string DeletedMask;
-            DeletedMask = Mask_listBox.SelectedItem.ToString();
+            string DeletedMask = Mask_listBox.SelectedItem.ToString();
             Mask_listBox.Items.Remove(DeletedMask);
             MessageBox.Show("Маска " + DeletedMask + " удалена.");
-            DeletedMask = null;
         }
     }
 }
